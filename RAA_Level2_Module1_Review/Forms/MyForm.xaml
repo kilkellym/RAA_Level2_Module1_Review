@@ -27,7 +27,7 @@
                     <ColumnDefinition Width="100"/>
                 </Grid.ColumnDefinitions>
                 <TextBox x:Name="tbxSelect" Grid.Column="0"/>
-                <Button x:Name="btnSelect" Content="Select.." Grid.Column="1" Width="90" HorizontalAlignment="Right"/>
+                <Button x:Name="btnSelect" Content="Select.." Grid.Column="1" Width="90" HorizontalAlignment="Right" Click="btnSelect_Click"/>
             </Grid>
             <Label Content="Select Units:" Grid.Row="3" FontWeight="Bold"/>
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Grid.Row="4">
@@ -40,8 +40,8 @@
                 <CheckBox x:Name="cbCeilingPlan" Content="Ceiling Plan" IsChecked="True"/>
             </StackPanel>
             <StackPanel Orientation="Horizontal" Grid.Row="7" HorizontalAlignment="Right">
-                <Button x:Name="btnOK" Content="OK" Width="90" Height="30" Margin="0,0,10,0"/>
-                <Button x:Name="btnCancel" Content="Cancel" Width="90" Height="30"/>
+                <Button x:Name="btnOK" Content="OK" Width="90" Height="30" Margin="0,0,10,0" Click="btnOK_Click"/>
+                <Button x:Name="btnCancel" Content="Cancel" Width="90" Height="30" Click="btnCancel_Click"/>
             </StackPanel>
         </Grid>
     </Border>
