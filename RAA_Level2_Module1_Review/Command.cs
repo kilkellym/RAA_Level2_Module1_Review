@@ -26,8 +26,6 @@ namespace RAA_Level2_Module1_Review
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
 
-            // put any code needed for the form here
-
             // open form
             MyForm currentForm = new MyForm()
             {
@@ -39,7 +37,7 @@ namespace RAA_Level2_Module1_Review
 
             currentForm.ShowDialog();
 
-            // get form data and do something
+            // 4. get form data and do something
 
             return Result.Succeeded;
         }
