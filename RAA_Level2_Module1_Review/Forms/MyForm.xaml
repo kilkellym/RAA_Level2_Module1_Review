@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:RAA_Level2_Module1_Review"
              mc:Ignorable="d" 
              Title="Project Setup"
-             d:DesignHeight="350" d:DesignWidth="500">
+             d:DesignHeight="365" d:DesignWidth="500">
     <Border Margin="10">
         <Grid>
             <Grid.RowDefinitions>
@@ -26,10 +26,10 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="100"/>
                 </Grid.ColumnDefinitions>
-                <TextBox x:Name="tbxSelect" Grid.Column="0"/>
+                <TextBox x:Name="tbxSelect" Grid.Column="0" VerticalContentAlignment="Center"/>
                 <Button x:Name="btnSelect" Content="Select.." Grid.Column="1" Width="90" HorizontalAlignment="Right" Click="btnSelect_Click"/>
             </Grid>
-            <Label Content="Select Units:" Grid.Row="3" FontWeight="Bold"/>
+            <Label Content="Select Units:" Grid.Row="3" FontWeight="Bold" VerticalAlignment="Bottom"/>
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Grid.Row="4">
                 <RadioButton x:Name="rbImperial" Content="Imperial" Margin="0,0,10,0" IsChecked="True"/>
                 <RadioButton x:Name="rbMetric" Content="Metric"/>

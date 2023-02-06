@@ -29,13 +29,16 @@ namespace RAA_Level2_Module1_Review
             // open form
             MyForm currentForm = new MyForm()
             {
-                Width = 800,
-                Height = 450,
+                Width = 500,
+                Height = 365,
                 WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen,
                 Topmost = true,
             };
 
-            currentForm.ShowDialog();
+            if(currentForm.ShowDialog() == false)
+            {
+                return Result.Cancelled;
+            }
 
             // 4. get form data and do something
 
