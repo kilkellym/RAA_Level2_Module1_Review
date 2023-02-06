@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿using Autodesk.Revit.UI;
+using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,5 +54,40 @@ namespace RAA_Level2_Module1_Review
             this.Close();
         }
 
+        internal string GetFilePath()
+        {
+            if (tbxSelect.Text != "")
+                return tbxSelect.Text;
+            else
+                TaskDialog.Show("Error", "Please select a file!");
+
+            return null;
+        }
+
+        internal string GetUnits()
+        {
+            if(rbImperial.IsChecked == true)
+            {
+                return "imperial";
+            }
+
+            return "metric";
+        }
+
+        internal bool CreateFloorPlan()
+        {
+            if (cbFloorPlan.IsChecked == true)
+                return true;
+
+            return false;
+        }
+
+        internal bool CreateCeilingPlan()
+        {
+            if(cbCeilingPlan.IsChecked == true)
+                return true;
+
+            return false;
+        }
     }
 }
