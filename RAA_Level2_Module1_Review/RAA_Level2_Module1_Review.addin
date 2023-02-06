@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command RAA_Level2_Module1_Review</Text>
+    <Description>Some description for RAA_Level2_Module1_Review</Description>
+    <Assembly>RAA_Level2_Module1_Review.dll</Assembly>
+    <FullClassName>RAA_Level2_Module1_Review.Command</FullClassName>
+    <ClientId>a63acf81-40e5-404e-8472-4d2fe7c44c3d</ClientId>
+    <VendorId>com.YOUR COMPANY NAME</VendorId>
+    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application RAA_Level2_Module1_Review</Name>
+    <Assembly>RAA_Level2_Module1_Review.dll</Assembly>
+    <FullClassName>RAA_Level2_Module1_Review.App</FullClassName>
+    <ClientId>d10ee5ef-6714-4a15-af2c-2de3a66b3770</ClientId>
+    <VendorId>com.YOUR COMPANY NAME</VendorId>
+    <VendorDescription>YOUR COMPANY NAME, YOUR COMPANY URL</VendorDescription>
+  </AddIn>
+</RevitAddIns>
